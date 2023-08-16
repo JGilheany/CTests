@@ -200,28 +200,62 @@
 //     Console.WriteLine(i);
 // }
 
-// Creates grid for game
+// // Creates grid for game
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+// using System;
+// using System.Collections.Generic;
+// using System.Linq;
 
-class Program
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         // Assuming y_axis and x_axis are arrays of strings
+//         var y_axis = new string[] {"A", "B", "C", "D", "E", "F"};
+//         var x_axis = new string[] {"1", "2", "3", "4", "5", "6"};
+
+//         var grid = new List<string>();
+//         foreach (var a in y_axis)
+//         {
+//             foreach (var b in x_axis)
+//             {
+//                 grid.Add(a + b);
+//             }
+//         }
+//         Console.WriteLine(string.Join(" ", grid));
+//     }
+// }
+
+// string[] names = { "Alex", "Eddie", "David", "Michael" };
+// for (int i = names.Length - 1; i >= 0; i--)
+// {
+//     Console.WriteLine(names[i]);
+// }
+
+// string[] names = { "Alex", "Eddie", "David", "Michael" };
+// for (int i = 0; i < names.Length; i++)
+//     if (names[i] == "David") names[i] = "Sammy";
+
+// foreach (var name in names) Console.WriteLine(name); 
+
+// for (int i = 1; i < 101; i++);{
+    
+//     if(((i % 3) == 0) && ((i % 4) == 0));
+//         Console.WriteLine($"{i} Fizz");
+//     else Console.WriteLine(i);
+
+// }
+
+for (int i = 1; i < 101; i++)
 {
-    static void Main(string[] args)
-    {
-        // Assuming y_axis and x_axis are arrays of strings
-        var y_axis = new string[] {"A", "B", "C", "D", "E", "F"};
-        var x_axis = new string[] {"1", "2", "3", "4", "5", "6"};
+    if(((i % 3) == 0) && ((i % 4) == 0))
+        Console.WriteLine($"{i} FizzBuzz");
+    
+    else if ((i % 3) == 0)
+        Console.WriteLine($"{i} Fizz");    
 
-        var grid = new List<string>();
-        foreach (var a in y_axis)
-        {
-            foreach (var b in x_axis)
-            {
-                grid.Add(a + b);
-            }
-        }
-        Console.WriteLine(string.Join(" ", grid));
-    }
+    else if ((i % 5) == 0)
+        Console.WriteLine($"{i} Buzz");    
+    
+    else Console.WriteLine(i);
 }
