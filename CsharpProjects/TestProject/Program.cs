@@ -262,23 +262,53 @@
 //     else Console.WriteLine(i);
 // }
 
+// Random random = new Random();
+// int current = random.Next(1, 11);
+
+// do
+// {
+//     current = random.Next(1, 11);
+
+//     if (current >= 8) continue;
+
+//     Console.WriteLine(current);
+// } while (current != 7);
+
+// /*
+// while (current >= 3)
+// {
+//     Console.WriteLine(current);
+//     current = random.Next(1, 11);
+// }
+// Console.WriteLine($"Last number: {current}");
+// */
+
+
 Random random = new Random();
-int current = random.Next(1, 11);
+int atkhero = random.Next(1, 11);
+int atkmonst = random.Next(1, 11);
+int hphero = 10;
+int hpmonst = 10;
 
 do
 {
-    current = random.Next(1, 11);
+    atkhero = random.Next(1, 11);
+    hpmonst = hpmonst - atkhero;
+    Console.WriteLine($"The Hero swung for {atkhero} damage! The monster has {hpmonst} health left.");
+    if (hpmonst <= 0) break;
 
-    if (current >= 8) continue;
+    atkmonst = random.Next(1, 11);
+    hphero = hphero - atkmonst;
+    Console.WriteLine($"The Monster swung for {atkmonst} damage! The hero has {hphero} health left.");
+    if (hphero <= 0) break;
 
-    Console.WriteLine(current);
-} while (current != 7);
 
-/*
-while (current >= 3)
-{
-    Console.WriteLine(current);
-    current = random.Next(1, 11);
+} while (hphero > 0 && hpmonst > 0);
+
+// Console.WriteLine(hphero);
+// Console.WriteLine(hpmonst);
+
+if (hphero > hpmonst){
+    Console.WriteLine("Huzzah! The monster has been vanquished");
 }
-Console.WriteLine($"Last number: {current}");
-*/
+else Console.WriteLine("The hero has been slain!");
