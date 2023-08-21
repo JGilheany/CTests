@@ -284,31 +284,120 @@
 // */
 
 
-Random random = new Random();
-int atkhero = random.Next(1, 11);
-int atkmonst = random.Next(1, 11);
-int hphero = 10;
-int hpmonst = 10;
+// Random random = new Random();
+// int atkhero = random.Next(1, 11);
+// int atkmonst = random.Next(1, 11);
+// int hphero = 10;
+// int hpmonst = 10;
 
-do
+// do
+// {
+//     atkhero = random.Next(1, 11);
+//     hpmonst = hpmonst - atkhero;
+//     Console.WriteLine($"The Hero swung for {atkhero} damage! The monster has {hpmonst} health left.");
+//     if (hpmonst <= 0) break;
+
+//     atkmonst = random.Next(1, 11);
+//     hphero = hphero - atkmonst;
+//     Console.WriteLine($"The Monster swung for {atkmonst} damage! The hero has {hphero} health left.");
+//     if (hphero <= 0) break;
+
+
+// } while (hphero > 0 && hpmonst > 0);
+
+// // Console.WriteLine(hphero);
+// // Console.WriteLine(hpmonst);
+
+// if (hphero > hpmonst){
+//     Console.WriteLine("Huzzah! The monster has been vanquished");
+// }
+// else Console.WriteLine("The hero has been slain!");
+
+// string? readResult;
+// Console.WriteLine("Enter a string:");
+// do
+// {
+//     readResult = Console.ReadLine();
+// } while (readResult.Length < 3);
+
+// // capture user input in a string variable named readResult
+
+// int numericValue = 0;
+// bool validNumber = false;
+
+// validNumber = int.TryParse(readResult, out numericValue);
+
+
+// int numericValue = 0;
+// bool validNumber = false;
+
+
+
+// string? readResult;
+// Console.WriteLine("Enter an integer between 5 and 10:");
+// readResult = Console.ReadLine();
+// validNumber = int.TryParse(readResult, out numericValue);
+
+// while (validNumber = false || numericValue < 5 || numericValue > 10)
+// {
+//     Console.WriteLine("I'm sorry, please enter an integer between 5 and 10:");
+//     readResult = Console.ReadLine();
+//     validNumber = int.TryParse(readResult, out numericValue);
+
+// }
+
+// Console.WriteLine($"User entered {numericValue}");
+
+
+string? rawResult;
+string? readResult;
+int acclvl = 4;
+
+Console.WriteLine("Please enter your role name: (Administrator, Manager or User)");
+rawResult = Console.ReadLine();
+readResult = rawResult.ToLower().Trim();
+
+
+
+switch (readResult)
 {
-    atkhero = random.Next(1, 11);
-    hpmonst = hpmonst - atkhero;
-    Console.WriteLine($"The Hero swung for {atkhero} damage! The monster has {hpmonst} health left.");
-    if (hpmonst <= 0) break;
-
-    atkmonst = random.Next(1, 11);
-    hphero = hphero - atkmonst;
-    Console.WriteLine($"The Monster swung for {atkmonst} damage! The hero has {hphero} health left.");
-    if (hphero <= 0) break;
-
-
-} while (hphero > 0 && hpmonst > 0);
-
-// Console.WriteLine(hphero);
-// Console.WriteLine(hpmonst);
-
-if (hphero > hpmonst){
-    Console.WriteLine("Huzzah! The monster has been vanquished");
+    case "administrator":
+        acclvl = 1;
+        break;
+    case "manager":
+        acclvl = 2;
+        break;
+    case "user":
+        acclvl = 3;
+        break;
+    default:
+        acclvl = 4;
+        break;
 }
-else Console.WriteLine("The hero has been slain!");
+
+while (acclvl == 4)
+{
+    Console.WriteLine($"The role name that you entered, \"{readResult}\" is not valid. Enter your role name (Administrator, Manager, or User)");
+    rawResult = Console.ReadLine();
+    readResult = rawResult.ToLower().Trim();
+
+
+
+    switch (readResult)
+    {
+        case "administrator":
+            acclvl = 1;
+            break;
+        case "manager":
+            acclvl = 2;
+            break;
+        case "user":
+            acclvl = 3;
+            break;
+        default:
+            acclvl = 4;
+            break;
+    }
+}
+
+Console.WriteLine($"Your input value ({rawResult}) has been accepted.");
