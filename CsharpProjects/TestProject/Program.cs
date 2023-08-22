@@ -349,55 +349,70 @@
 // Console.WriteLine($"User entered {numericValue}");
 
 
-string? rawResult;
-string? readResult;
-int acclvl = 4;
+// string? rawResult;
+// string? readResult;
+// int acclvl = 4;
 
-Console.WriteLine("Please enter your role name: (Administrator, Manager or User)");
-rawResult = Console.ReadLine();
-readResult = rawResult.ToLower().Trim();
-
-
-
-switch (readResult)
-{
-    case "administrator":
-        acclvl = 1;
-        break;
-    case "manager":
-        acclvl = 2;
-        break;
-    case "user":
-        acclvl = 3;
-        break;
-    default:
-        acclvl = 4;
-        break;
-}
-
-while (acclvl == 4)
-{
-    Console.WriteLine($"The role name that you entered, \"{readResult}\" is not valid. Enter your role name (Administrator, Manager, or User)");
-    rawResult = Console.ReadLine();
-    readResult = rawResult.ToLower().Trim();
+// Console.WriteLine("Please enter your role name: (Administrator, Manager or User)");
+// rawResult = Console.ReadLine();
+// readResult = rawResult.ToLower().Trim();
 
 
 
-    switch (readResult)
-    {
-        case "administrator":
-            acclvl = 1;
-            break;
-        case "manager":
-            acclvl = 2;
-            break;
-        case "user":
-            acclvl = 3;
-            break;
-        default:
-            acclvl = 4;
-            break;
-    }
-}
+// switch (readResult)
+// {
+//     case "administrator":
+//         acclvl = 1;
+//         break;
+//     case "manager":
+//         acclvl = 2;
+//         break;
+//     case "user":
+//         acclvl = 3;
+//         break;
+//     default:
+//         acclvl = 4;
+//         break;
+// }
 
-Console.WriteLine($"Your input value ({rawResult}) has been accepted.");
+// while (acclvl == 4)
+// {
+//     Console.WriteLine($"The role name that you entered, \"{readResult}\" is not valid. Enter your role name (Administrator, Manager, or User)");
+//     rawResult = Console.ReadLine();
+//     readResult = rawResult.ToLower().Trim();
+
+
+
+//     switch (readResult)
+//     {
+//         case "administrator":
+//             acclvl = 1;
+//             break;
+//         case "manager":
+//             acclvl = 2;
+//             break;
+//         case "user":
+//             acclvl = 3;
+//             break;
+//         default:
+//             acclvl = 4;
+//             break;
+//     }
+// }
+
+// Console.WriteLine($"Your input value ({rawResult}) has been accepted.");
+
+var name = "Bob";
+var inbox = 3;
+var temp = 34.4;
+Console.WriteLine($"Hello, {name}! You have {inbox} in your inbox. The temperature is {temp} celsius.");
+
+// string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+
+// int[] periodLocation = {};
+
+// foreach (string str in myStrings)
+// {
+
+//     Console.WriteLine(str);
+// }
