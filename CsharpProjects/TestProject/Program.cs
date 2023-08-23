@@ -402,10 +402,71 @@
 
 // Console.WriteLine($"Your input value ({rawResult}) has been accepted.");
 
-var name = "Bob";
-var inbox = 3;
-var temp = 34.4;
-Console.WriteLine($"Hello, {name}! You have {inbox} in your inbox. The temperature is {temp} celsius.");
+// var name = "Bob";
+// var inbox = 3;
+// var temp = 34.4;
+// Console.WriteLine($"Hello, {name}! You have {inbox} in your inbox. The temperature is {temp} celsius.");
+
+// Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ...\n");
+// Console.WriteLine("Invoice: 1021\t\tComplete!");
+// Console.WriteLine("Invoice: 1022\t\tComplete!");
+// Console.WriteLine("\nOutput Directory:\t");
+// Console.Write(@"c:\invoices");
+
+// // To generate Japanese invoices:
+// // Nihon no seikyū-sho o seisei suru ni wa:
+// Console.Write("\n\n\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t");
+// // User command to run an application
+// Console.WriteLine(@"c:\invoices\app.exe -j");
+
+// string projectName = "First-Project";
+// Console.WriteLine($@"C:\Output\{projectName}\Data");
+
+// string projectName = "ACME";
+// string englishLoc = $"c:\\Exercise\\{projectName}\\data.txt";
+// Console.WriteLine($@"View English output: 
+//   {englishLoc}
+//   ");
+
+
+// string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
+// string russianLoc = $"c:\\Exercise\\{projectName}\\ru-RU\\data.txt";
+
+// Console.WriteLine($@"{russianMessage} 
+//   {russianLoc}");
+
+
+// int sum = 7 + 5;
+// int difference = 7 - 5;
+// int product = 7 * 5;
+// int quotient = 7 / 5;
+
+// Console.WriteLine("Sum: " + sum);
+// Console.WriteLine("Difference: " + difference);
+// Console.WriteLine("Product: " + product);
+// Console.WriteLine("Quotient: " + quotient);
+
+// decimal decimalQuotient = 7.0m / 5;
+// Console.WriteLine($"Decimal quotient: {decimalQuotient}");
+
+
+
+// int first = 7;
+// int second = 5;
+// decimal quotient = (decimal)first / (decimal)second;
+// Console.WriteLine(quotient);
+
+// Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
+// Console.WriteLine($"Modulus of 7 / 5 : {7 % 5}");
+
+int value = 1;
+value++;
+Console.WriteLine("First: " + value);
+Console.WriteLine("Second: " + value++);
+Console.WriteLine("Third: " + value);
+Console.WriteLine("Fourth: " + (++value));
+
+
 
 // string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
 
