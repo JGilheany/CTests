@@ -239,7 +239,7 @@
 // foreach (var name in names) Console.WriteLine(name); 
 
 // for (int i = 1; i < 101; i++);{
-    
+
 //     if(((i % 3) == 0) && ((i % 4) == 0));
 //         Console.WriteLine($"{i} Fizz");
 //     else Console.WriteLine(i);
@@ -252,13 +252,13 @@
 // {
 //     if(((i % 3) == 0) && ((i % 4) == 0))
 //         Console.WriteLine($"{i} FizzBuzz");
-    
+
 //     else if ((i % 3) == 0)
 //         Console.WriteLine($"{i} Fizz");    
 
 //     else if ((i % 5) == 0)
 //         Console.WriteLine($"{i} Buzz");    
-    
+
 //     else Console.WriteLine(i);
 // }
 
@@ -459,12 +459,36 @@
 // Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
 // Console.WriteLine($"Modulus of 7 / 5 : {7 % 5}");
 
-int value = 1;
-value++;
-Console.WriteLine("First: " + value);
-Console.WriteLine("Second: " + value++);
-Console.WriteLine("Third: " + value);
-Console.WriteLine("Fourth: " + (++value));
+// int value = 1;
+// value++;
+// Console.WriteLine("First: " + value);
+// Console.WriteLine("Second: " + value++);
+// Console.WriteLine("Third: " + value);
+// Console.WriteLine("Fourth: " + (++value));
+
+// int fahrenheit = 94;
+// decimal celsius = ((fahrenheit - 32) * (5m/9m));
+
+// Console.WriteLine($"The temperature is {celsius} degrees.");
+
+
+
+
+int[] sophia = {93, 87, 98, 95, 100};
+int[] nicolas = {80, 83, 82, 88, 85};
+int[] zahirah = {84, 96, 73, 85, 79};
+int[] jeong = {90, 92, 98, 100, 97};
+
+Console.WriteLine("Student\t\tGrade");
+double sophiaGrade = sophia.Average();
+Console.WriteLine($"Sophia\t\t{sophiaGrade}\tA");
+double nicolasGrade = nicolas.Average();
+Console.WriteLine($"Nicolas\t\t{nicolasGrade}\tB");
+double zahirahGrade = zahirah.Average();
+Console.WriteLine($"Zahirah\t\t{zahirahGrade}\tB");
+double jeongGrade = jeong.Average();
+Console.WriteLine($"Jeong\t\t{jeongGrade}\tA");
+
 
 
 
