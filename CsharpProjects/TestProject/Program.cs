@@ -474,20 +474,24 @@
 
 
 
-int[] sophia = {93, 87, 98, 95, 100};
-int[] nicolas = {80, 83, 82, 88, 85};
-int[] zahirah = {84, 96, 73, 85, 79};
-int[] jeong = {90, 92, 98, 100, 97};
+// int[] sophia = {93, 87, 98, 95, 100};
+// int[] nicolas = {80, 83, 82, 88, 85};
+// int[] zahirah = {84, 96, 73, 85, 79};
+// int[] jeong = {90, 92, 98, 100, 97};
 
-Console.WriteLine("Student\t\tGrade");
-double sophiaGrade = sophia.Average();
-Console.WriteLine($"Sophia\t\t{sophiaGrade}\tA");
-double nicolasGrade = nicolas.Average();
-Console.WriteLine($"Nicolas\t\t{nicolasGrade}\tB");
-double zahirahGrade = zahirah.Average();
-Console.WriteLine($"Zahirah\t\t{zahirahGrade}\tB");
-double jeongGrade = jeong.Average();
-Console.WriteLine($"Jeong\t\t{jeongGrade}\tA");
+// Console.WriteLine("Student\t\tGrade");
+// double sophiaGrade = sophia.Average();
+// Console.WriteLine($"Sophia\t\t{sophiaGrade}\tA");
+// double nicolasGrade = nicolas.Average();
+// Console.WriteLine($"Nicolas\t\t{nicolasGrade}\tB");
+// double zahirahGrade = zahirah.Average();
+// Console.WriteLine($"Zahirah\t\t{zahirahGrade}\tB");
+// double jeongGrade = jeong.Average();
+// Console.WriteLine($"Jeong\t\t{jeongGrade}\tA");
+
+
+
+
 
 
 
