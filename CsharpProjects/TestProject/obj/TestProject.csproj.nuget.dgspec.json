@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj": {}
+    "c:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj": {
+    "c:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj",
+        "projectUniqueName": "c:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj",
         "projectName": "TestProject",
-        "projectPath": "C:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj",
+        "projectPath": "c:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj",
         "packagesPath": "C:\\Users\\joshg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\obj\\",
+        "outputPath": "c:\\Users\\joshg\\Documents\\Projects\\CSharp\\CsharpProjects\\TestProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joshg\\AppData\\Roaming\\NuGet\\NuGet.Config"
